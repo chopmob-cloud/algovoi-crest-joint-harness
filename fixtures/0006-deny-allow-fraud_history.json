@@ -1,0 +1,90 @@
+{
+  "id": "0006-deny-allow-fraud_history",
+  "description": "Crest deny + AlgoVoi ALLOW. Compliance clean but Crest behavioural deny on fraud history.",
+  "inputs": {
+    "payment": {
+      "payment_ref": "sha256:6666666600000000000000000000000000000000000000000000000000000006",
+      "chain": "eip155:8453",
+      "asset_id": "USDC.6",
+      "amount_minor": "200000",
+      "payer_ref": "sha256:6060110000000000000000000000000000000000000000000000000000000606",
+      "payee_ref": "sha256:6060220000000000000000000000000000000000000000000000000000000606",
+      "timestamp_ms": 1716499000000
+    },
+    "compliance_emitter_input": {
+      "payer_ref": "sha256:6060110000000000000000000000000000000000000000000000000000000606",
+      "screen_result": "ALLOW",
+      "screen_timestamp_ms": 1716499000000,
+      "screen_provider_did": "did:web:api.algovoi.co.uk",
+      "jurisdiction_flags": [
+        "UK",
+        "EU"
+      ],
+      "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000006"
+    },
+    "conformance_emitter_input": {
+      "payment_ref": "sha256:6666666600000000000000000000000000000000000000000000000000000006",
+      "subject": "sha256:6060220000000000000000000000000000000000000000000000000000000606",
+      "recommendation": "deny",
+      "score": 18,
+      "score_null_reason": null,
+      "evidence_array": [
+        {
+          "kind": "receipt_outcomes",
+          "source": "supership",
+          "ref": "sha256:bbbb000000000000000000000000000000000000000000000000000000000006",
+          "observed_at": 1716480000000,
+          "weight": 0.85
+        },
+        {
+          "kind": "bazaar_listing",
+          "source": "supership",
+          "ref": "sha256:cccc000000000000000000000000000000000000000000000000000000000006",
+          "observed_at": 1716483000000,
+          "weight": 0.2
+        }
+      ],
+      "issued_at_ms": 1716499100000,
+      "verifier_did": "did:web:supership.crestsystems.ai",
+      "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000006"
+    }
+  },
+  "expected": {
+    "compliance_ref": "sha256:17eb62955f260e9430f7207a2fc0400502f2ff284d1966d3c73c0aa761afc7a8",
+    "conformance_ref": "sha256:7ff807b0a0b2fd0a6c60fa60b3b721cee2870088455ea86ec5608eee08d2cc80",
+    "joint_ref": "sha256:db77d2dbbeec8d6c388366767e8db9b3e848ef087cf98bb228e88c1120b63e92",
+    "joint_receipt": {
+      "canon_version": "jcs-rfc8785-v1",
+      "compliance": {
+        "compliance_ref": "sha256:17eb62955f260e9430f7207a2fc0400502f2ff284d1966d3c73c0aa761afc7a8",
+        "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000006",
+        "jurisdiction_flags": [
+          "UK",
+          "EU"
+        ],
+        "provider_did": "did:web:api.algovoi.co.uk",
+        "verdict": "ALLOW"
+      },
+      "conformance": {
+        "conformance_ref": "sha256:7ff807b0a0b2fd0a6c60fa60b3b721cee2870088455ea86ec5608eee08d2cc80",
+        "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000006",
+        "provider_did": "did:web:supership.crestsystems.ai",
+        "recommendation": "deny",
+        "score": 18,
+        "score_null_reason": null,
+        "spec": "urn:crest:trust-check-v1"
+      },
+      "joint_ref": "sha256:db77d2dbbeec8d6c388366767e8db9b3e848ef087cf98bb228e88c1120b63e92",
+      "joint_version": "joint-harness-v0",
+      "payment": {
+        "payment_ref": "sha256:6666666600000000000000000000000000000000000000000000000000000006",
+        "chain": "eip155:8453",
+        "asset_id": "USDC.6",
+        "amount_minor": "200000",
+        "payer_ref": "sha256:6060110000000000000000000000000000000000000000000000000000000606",
+        "payee_ref": "sha256:6060220000000000000000000000000000000000000000000000000000000606",
+        "timestamp_ms": 1716499000000
+      }
+    }
+  }
+}

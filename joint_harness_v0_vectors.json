@@ -1,0 +1,239 @@
+{
+  "vector_set_id": "joint_harness_v0",
+  "vector_set_version": "v0",
+  "discipline": "urn:x402:canonicalisation:jcs-rfc8785-v1",
+  "vectors": [
+    {
+      "vector_id": "0001-allow-allow-baseline",
+      "description": "Crest allow + AlgoVoi ALLOW. Baseline-clean joint receipt.",
+      "receipt": {
+        "canon_version": "jcs-rfc8785-v1",
+        "compliance": {
+          "compliance_ref": "sha256:25e75b64be4d7eb7c285b1aa748bbf4ad5ee867c43d4f5e922ef5eefc32b6894",
+          "evidence_anchor": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+          "jurisdiction_flags": [
+            "UK",
+            "EU"
+          ],
+          "provider_did": "did:web:api.algovoi.co.uk",
+          "verdict": "ALLOW"
+        },
+        "conformance": {
+          "conformance_ref": "sha256:0303177e6fdb0b847923fd83fb3823b2e64f3c9f28ec124e271f135aeedf3ce7",
+          "evidence_anchor": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+          "provider_did": "did:web:supership.crestsystems.ai",
+          "recommendation": "allow",
+          "score": 87,
+          "score_null_reason": null,
+          "spec": "urn:crest:trust-check-v1"
+        },
+        "joint_ref": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "joint_version": "joint-harness-v0",
+        "payment": {
+          "payment_ref": "sha256:0dd5d0b76c9b9281fdeb2509ad38ab132b16a17385ca01d976ff9e6e12563a0f",
+          "chain": "eip155:8453",
+          "asset_id": "USDC.6",
+          "amount_minor": "1000000",
+          "payer_ref": "sha256:abc1230000000000000000000000000000000000000000000000000000000000",
+          "payee_ref": "sha256:def4560000000000000000000000000000000000000000000000000000000000",
+          "timestamp_ms": 1716494400000
+        }
+      },
+      "expected_jcs_bytes_b64": "eyJjYW5vbl92ZXJzaW9uIjoiamNzLXJmYzg3ODUtdjEiLCJjb21wbGlhbmNlIjp7ImNvbXBsaWFuY2VfcmVmIjoic2hhMjU2OjI1ZTc1YjY0YmU0ZDdlYjdjMjg1YjFhYTc0OGJiZjRhZDVlZTg2N2M0M2Q0ZjVlOTIyZWY1ZWVmYzMyYjY4OTQiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6MTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMSIsImp1cmlzZGljdGlvbl9mbGFncyI6WyJVSyIsIkVVIl0sInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6YXBpLmFsZ292b2kuY28udWsiLCJ2ZXJkaWN0IjoiQUxMT1cifSwiY29uZm9ybWFuY2UiOnsiY29uZm9ybWFuY2VfcmVmIjoic2hhMjU2OjAzMDMxNzdlNmZkYjBiODQ3OTIzZmQ4M2ZiMzgyM2IyZTY0ZjNjOWYyOGVjMTI0ZTI3MWYxMzVhZWVkZjNjZTciLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NCIsInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6c3VwZXJzaGlwLmNyZXN0c3lzdGVtcy5haSIsInJlY29tbWVuZGF0aW9uIjoiYWxsb3ciLCJzY29yZSI6ODcsInNjb3JlX251bGxfcmVhc29uIjpudWxsLCJzcGVjIjoidXJuOmNyZXN0OnRydXN0LWNoZWNrLXYxIn0sImpvaW50X3JlZiI6InNoYTI1NjowMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiam9pbnRfdmVyc2lvbiI6ImpvaW50LWhhcm5lc3MtdjAiLCJwYXltZW50Ijp7ImFtb3VudF9taW5vciI6IjEwMDAwMDAiLCJhc3NldF9pZCI6IlVTREMuNiIsImNoYWluIjoiZWlwMTU1Ojg0NTMiLCJwYXllZV9yZWYiOiJzaGEyNTY6ZGVmNDU2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsInBheWVyX3JlZiI6InNoYTI1NjphYmMxMjMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwicGF5bWVudF9yZWYiOiJzaGEyNTY6MGRkNWQwYjc2YzliOTI4MWZkZWIyNTA5YWQzOGFiMTMyYjE2YTE3Mzg1Y2EwMWQ5NzZmZjllNmUxMjU2M2EwZiIsInRpbWVzdGFtcF9tcyI6MTcxNjQ5NDQwMDAwMH19",
+      "expected_content_hash": "b035d7f0b838f284c1ea205ff1343a82c7f0461456df040dc429bb64ec63f3c2"
+    },
+    {
+      "vector_id": "0002-caution-refer-watchlist",
+      "description": "Crest caution + AlgoVoi REFER. Soft-flag both sides; payer warrants ongoing monitoring.",
+      "receipt": {
+        "canon_version": "jcs-rfc8785-v1",
+        "compliance": {
+          "compliance_ref": "sha256:543a27bbde4c2c80b3aa12cee66955d377a9dd885f34bf74949e04a716d28da5",
+          "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000002",
+          "jurisdiction_flags": [
+            "UK",
+            "EU"
+          ],
+          "provider_did": "did:web:api.algovoi.co.uk",
+          "verdict": "REFER"
+        },
+        "conformance": {
+          "conformance_ref": "sha256:9adfee1ade353d3833801774aa0106c9b3a8afd74642907d6af95934b59da9ab",
+          "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000002",
+          "provider_did": "did:web:supership.crestsystems.ai",
+          "recommendation": "caution",
+          "score": 54,
+          "score_null_reason": null,
+          "spec": "urn:crest:trust-check-v1"
+        },
+        "joint_ref": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "joint_version": "joint-harness-v0",
+        "payment": {
+          "payment_ref": "sha256:2222222200000000000000000000000000000000000000000000000000000002",
+          "chain": "eip155:8453",
+          "asset_id": "USDC.6",
+          "amount_minor": "5000000",
+          "payer_ref": "sha256:c0c01100000000000000000000000000000000000000000000000000000000c0",
+          "payee_ref": "sha256:e0e02200000000000000000000000000000000000000000000000000000000e0",
+          "timestamp_ms": 1716496000000
+        }
+      },
+      "expected_jcs_bytes_b64": "eyJjYW5vbl92ZXJzaW9uIjoiamNzLXJmYzg3ODUtdjEiLCJjb21wbGlhbmNlIjp7ImNvbXBsaWFuY2VfcmVmIjoic2hhMjU2OjU0M2EyN2JiZGU0YzJjODBiM2FhMTJjZWU2Njk1NWQzNzdhOWRkODg1ZjM0YmY3NDk0OWUwNGE3MTZkMjhkYTUiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6YWFhYTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMiIsImp1cmlzZGljdGlvbl9mbGFncyI6WyJVSyIsIkVVIl0sInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6YXBpLmFsZ292b2kuY28udWsiLCJ2ZXJkaWN0IjoiUkVGRVIifSwiY29uZm9ybWFuY2UiOnsiY29uZm9ybWFuY2VfcmVmIjoic2hhMjU2OjlhZGZlZTFhZGUzNTNkMzgzMzgwMTc3NGFhMDEwNmM5YjNhOGFmZDc0NjQyOTA3ZDZhZjk1OTM0YjU5ZGE5YWIiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6ZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMiIsInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6c3VwZXJzaGlwLmNyZXN0c3lzdGVtcy5haSIsInJlY29tbWVuZGF0aW9uIjoiY2F1dGlvbiIsInNjb3JlIjo1NCwic2NvcmVfbnVsbF9yZWFzb24iOm51bGwsInNwZWMiOiJ1cm46Y3Jlc3Q6dHJ1c3QtY2hlY2stdjEifSwiam9pbnRfcmVmIjoic2hhMjU2OjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJqb2ludF92ZXJzaW9uIjoiam9pbnQtaGFybmVzcy12MCIsInBheW1lbnQiOnsiYW1vdW50X21pbm9yIjoiNTAwMDAwMCIsImFzc2V0X2lkIjoiVVNEQy42IiwiY2hhaW4iOiJlaXAxNTU6ODQ1MyIsInBheWVlX3JlZiI6InNoYTI1NjplMGUwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGUwIiwicGF5ZXJfcmVmIjoic2hhMjU2OmMwYzAxMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwYzAiLCJwYXltZW50X3JlZiI6InNoYTI1NjoyMjIyMjIyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyIiwidGltZXN0YW1wX21zIjoxNzE2NDk2MDAwMDAwfX0=",
+      "expected_content_hash": "79fd3afcc23e1f8d85cb1e9a499347392e0499280335df3a8dc1b8862b26f3e9"
+    },
+    {
+      "vector_id": "0003-deny-deny-sanctions",
+      "description": "Crest deny + AlgoVoi DENY. Hard halt; counterparty sanctions hit + Crest behavioural deny.",
+      "receipt": {
+        "canon_version": "jcs-rfc8785-v1",
+        "compliance": {
+          "compliance_ref": "sha256:1e6eb361f7365b73056304900f8efc678717a0e25f40a5db452408b70ea98db9",
+          "evidence_anchor": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+          "jurisdiction_flags": [
+            "UK"
+          ],
+          "provider_did": "did:web:api.algovoi.co.uk",
+          "verdict": "DENY"
+        },
+        "conformance": {
+          "conformance_ref": "sha256:47ae17c2eb6acfb8d617482df7414f58fb93a0ca68e07ddaa8c6594dc3d4353c",
+          "evidence_anchor": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+          "provider_did": "did:web:supership.crestsystems.ai",
+          "recommendation": "deny",
+          "score": 12,
+          "score_null_reason": null,
+          "spec": "urn:crest:trust-check-v1"
+        },
+        "joint_ref": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "joint_version": "joint-harness-v0",
+        "payment": {
+          "payment_ref": "sha256:bad5d0b76c9b9281fdeb2509ad38ab132b16a17385ca01d976ff9e6e125bad00",
+          "chain": "eip155:8453",
+          "asset_id": "USDC.6",
+          "amount_minor": "50000000",
+          "payer_ref": "sha256:aaaa110000000000000000000000000000000000000000000000000000000000",
+          "payee_ref": "sha256:bbbb220000000000000000000000000000000000000000000000000000000000",
+          "timestamp_ms": 1716495000000
+        }
+      },
+      "expected_jcs_bytes_b64": "eyJjYW5vbl92ZXJzaW9uIjoiamNzLXJmYzg3ODUtdjEiLCJjb21wbGlhbmNlIjp7ImNvbXBsaWFuY2VfcmVmIjoic2hhMjU2OjFlNmViMzYxZjczNjViNzMwNTYzMDQ5MDBmOGVmYzY3ODcxN2EwZTI1ZjQwYTVkYjQ1MjQwOGI3MGVhOThkYjkiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NSIsImp1cmlzZGljdGlvbl9mbGFncyI6WyJVSyJdLCJwcm92aWRlcl9kaWQiOiJkaWQ6d2ViOmFwaS5hbGdvdm9pLmNvLnVrIiwidmVyZGljdCI6IkRFTlkifSwiY29uZm9ybWFuY2UiOnsiY29uZm9ybWFuY2VfcmVmIjoic2hhMjU2OjQ3YWUxN2MyZWI2YWNmYjhkNjE3NDgyZGY3NDE0ZjU4ZmI5M2EwY2E2OGUwN2RkYWE4YzY1OTRkYzNkNDM1M2MiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3NyIsInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6c3VwZXJzaGlwLmNyZXN0c3lzdGVtcy5haSIsInJlY29tbWVuZGF0aW9uIjoiZGVueSIsInNjb3JlIjoxMiwic2NvcmVfbnVsbF9yZWFzb24iOm51bGwsInNwZWMiOiJ1cm46Y3Jlc3Q6dHJ1c3QtY2hlY2stdjEifSwiam9pbnRfcmVmIjoic2hhMjU2OjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJqb2ludF92ZXJzaW9uIjoiam9pbnQtaGFybmVzcy12MCIsInBheW1lbnQiOnsiYW1vdW50X21pbm9yIjoiNTAwMDAwMDAiLCJhc3NldF9pZCI6IlVTREMuNiIsImNoYWluIjoiZWlwMTU1Ojg0NTMiLCJwYXllZV9yZWYiOiJzaGEyNTY6YmJiYjIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsInBheWVyX3JlZiI6InNoYTI1NjphYWFhMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwicGF5bWVudF9yZWYiOiJzaGEyNTY6YmFkNWQwYjc2YzliOTI4MWZkZWIyNTA5YWQzOGFiMTMyYjE2YTE3Mzg1Y2EwMWQ5NzZmZjllNmUxMjViYWQwMCIsInRpbWVzdGFtcF9tcyI6MTcxNjQ5NTAwMDAwMH19",
+      "expected_content_hash": "81ea312260253d870d203b70cd00ca338db630ecd5185c010298f98c2f6852b4"
+    },
+    {
+      "vector_id": "0004-no_data-allow-newpayee",
+      "description": "Crest no_data (unknown_service) + AlgoVoi ALLOW. New payee with no Crest history; AlgoVoi compliance still passes.",
+      "receipt": {
+        "canon_version": "jcs-rfc8785-v1",
+        "compliance": {
+          "compliance_ref": "sha256:df41307b3b607deb2a8b9064f34521662db8eaa2821bf6680a2d7d271764b37c",
+          "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000004",
+          "jurisdiction_flags": [
+            "UK"
+          ],
+          "provider_did": "did:web:api.algovoi.co.uk",
+          "verdict": "ALLOW"
+        },
+        "conformance": {
+          "conformance_ref": "sha256:1ebfeefeb857ef21cd3005b427ee0f7379d584b7d5dd1ff3ac1e8692ea5dc41f",
+          "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000004",
+          "provider_did": "did:web:supership.crestsystems.ai",
+          "recommendation": "no_data",
+          "score": null,
+          "score_null_reason": "unknown_service",
+          "spec": "urn:crest:trust-check-v1"
+        },
+        "joint_ref": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "joint_version": "joint-harness-v0",
+        "payment": {
+          "payment_ref": "sha256:4444444400000000000000000000000000000000000000000000000000000004",
+          "chain": "eip155:8453",
+          "asset_id": "USDC.6",
+          "amount_minor": "100000",
+          "payer_ref": "sha256:404011000000000000000000000000000000000000000000000000000000404",
+          "payee_ref": "sha256:404022000000000000000000000000000000000000000000000000000000404",
+          "timestamp_ms": 1716497000000
+        }
+      },
+      "expected_jcs_bytes_b64": "eyJjYW5vbl92ZXJzaW9uIjoiamNzLXJmYzg3ODUtdjEiLCJjb21wbGlhbmNlIjp7ImNvbXBsaWFuY2VfcmVmIjoic2hhMjU2OmRmNDEzMDdiM2I2MDdkZWIyYThiOTA2NGYzNDUyMTY2MmRiOGVhYTI4MjFiZjY2ODBhMmQ3ZDI3MTc2NGIzN2MiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6YWFhYTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNCIsImp1cmlzZGljdGlvbl9mbGFncyI6WyJVSyJdLCJwcm92aWRlcl9kaWQiOiJkaWQ6d2ViOmFwaS5hbGdvdm9pLmNvLnVrIiwidmVyZGljdCI6IkFMTE9XIn0sImNvbmZvcm1hbmNlIjp7ImNvbmZvcm1hbmNlX3JlZiI6InNoYTI1NjoxZWJmZWVmZWI4NTdlZjIxY2QzMDA1YjQyN2VlMGY3Mzc5ZDU4NGI3ZDVkZDFmZjNhYzFlODY5MmVhNWRjNDFmIiwiZXZpZGVuY2VfYW5jaG9yIjoic2hhMjU2OmRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQiLCJwcm92aWRlcl9kaWQiOiJkaWQ6d2ViOnN1cGVyc2hpcC5jcmVzdHN5c3RlbXMuYWkiLCJyZWNvbW1lbmRhdGlvbiI6Im5vX2RhdGEiLCJzY29yZSI6bnVsbCwic2NvcmVfbnVsbF9yZWFzb24iOiJ1bmtub3duX3NlcnZpY2UiLCJzcGVjIjoidXJuOmNyZXN0OnRydXN0LWNoZWNrLXYxIn0sImpvaW50X3JlZiI6InNoYTI1NjowMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiam9pbnRfdmVyc2lvbiI6ImpvaW50LWhhcm5lc3MtdjAiLCJwYXltZW50Ijp7ImFtb3VudF9taW5vciI6IjEwMDAwMCIsImFzc2V0X2lkIjoiVVNEQy42IiwiY2hhaW4iOiJlaXAxNTU6ODQ1MyIsInBheWVlX3JlZiI6InNoYTI1Njo0MDQwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDQiLCJwYXllcl9yZWYiOiJzaGEyNTY6NDA0MDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNDA0IiwicGF5bWVudF9yZWYiOiJzaGEyNTY6NDQ0NDQ0NDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNCIsInRpbWVzdGFtcF9tcyI6MTcxNjQ5NzAwMDAwMH19",
+      "expected_content_hash": "a7f4f547bb6ecb917aaaa7ad74ac4d0422c7a857fca17f4c83d280f11a0f45df"
+    },
+    {
+      "vector_id": "0005-allow-refer-jurisdiction",
+      "description": "Crest allow + AlgoVoi REFER. Crest sees clean behaviour but AlgoVoi flags REFER on jurisdiction.",
+      "receipt": {
+        "canon_version": "jcs-rfc8785-v1",
+        "compliance": {
+          "compliance_ref": "sha256:ec093554ad388ebb7389b05dd9bb05840b667872d3e9c11763f7ed020cbc13f1",
+          "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000005",
+          "jurisdiction_flags": [
+            "IR",
+            "UK"
+          ],
+          "provider_did": "did:web:api.algovoi.co.uk",
+          "verdict": "REFER"
+        },
+        "conformance": {
+          "conformance_ref": "sha256:cf9971e40d0bd6a6c34217fde04ae166db69d71748b63188f55006c565819485",
+          "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000005",
+          "provider_did": "did:web:supership.crestsystems.ai",
+          "recommendation": "allow",
+          "score": 79,
+          "score_null_reason": null,
+          "spec": "urn:crest:trust-check-v1"
+        },
+        "joint_ref": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "joint_version": "joint-harness-v0",
+        "payment": {
+          "payment_ref": "sha256:5555555500000000000000000000000000000000000000000000000000000005",
+          "chain": "eip155:8453",
+          "asset_id": "USDC.6",
+          "amount_minor": "25000000",
+          "payer_ref": "sha256:5050110000000000000000000000000000000000000000000000000000000505",
+          "payee_ref": "sha256:5050220000000000000000000000000000000000000000000000000000000505",
+          "timestamp_ms": 1716498000000
+        }
+      },
+      "expected_jcs_bytes_b64": "eyJjYW5vbl92ZXJzaW9uIjoiamNzLXJmYzg3ODUtdjEiLCJjb21wbGlhbmNlIjp7ImNvbXBsaWFuY2VfcmVmIjoic2hhMjU2OmVjMDkzNTU0YWQzODhlYmI3Mzg5YjA1ZGQ5YmIwNTg0MGI2Njc4NzJkM2U5YzExNzYzZjdlZDAyMGNiYzEzZjEiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6YWFhYTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNSIsImp1cmlzZGljdGlvbl9mbGFncyI6WyJJUiIsIlVLIl0sInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6YXBpLmFsZ292b2kuY28udWsiLCJ2ZXJkaWN0IjoiUkVGRVIifSwiY29uZm9ybWFuY2UiOnsiY29uZm9ybWFuY2VfcmVmIjoic2hhMjU2OmNmOTk3MWU0MGQwYmQ2YTZjMzQyMTdmZGUwNGFlMTY2ZGI2OWQ3MTc0OGI2MzE4OGY1NTAwNmM1NjU4MTk0ODUiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6ZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNSIsInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6c3VwZXJzaGlwLmNyZXN0c3lzdGVtcy5haSIsInJlY29tbWVuZGF0aW9uIjoiYWxsb3ciLCJzY29yZSI6NzksInNjb3JlX251bGxfcmVhc29uIjpudWxsLCJzcGVjIjoidXJuOmNyZXN0OnRydXN0LWNoZWNrLXYxIn0sImpvaW50X3JlZiI6InNoYTI1NjowMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiam9pbnRfdmVyc2lvbiI6ImpvaW50LWhhcm5lc3MtdjAiLCJwYXltZW50Ijp7ImFtb3VudF9taW5vciI6IjI1MDAwMDAwIiwiYXNzZXRfaWQiOiJVU0RDLjYiLCJjaGFpbiI6ImVpcDE1NTo4NDUzIiwicGF5ZWVfcmVmIjoic2hhMjU2OjUwNTAyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDUiLCJwYXllcl9yZWYiOiJzaGEyNTY6NTA1MDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDUwNSIsInBheW1lbnRfcmVmIjoic2hhMjU2OjU1NTU1NTU1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDUiLCJ0aW1lc3RhbXBfbXMiOjE3MTY0OTgwMDAwMDB9fQ==",
+      "expected_content_hash": "438c3639cfa54633678369ee749ec9e440b7aacec1a101bfb9712fb7cda8c10b"
+    },
+    {
+      "vector_id": "0006-deny-allow-fraud_history",
+      "description": "Crest deny + AlgoVoi ALLOW. Compliance clean but Crest behavioural deny on fraud history.",
+      "receipt": {
+        "canon_version": "jcs-rfc8785-v1",
+        "compliance": {
+          "compliance_ref": "sha256:17eb62955f260e9430f7207a2fc0400502f2ff284d1966d3c73c0aa761afc7a8",
+          "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000006",
+          "jurisdiction_flags": [
+            "UK",
+            "EU"
+          ],
+          "provider_did": "did:web:api.algovoi.co.uk",
+          "verdict": "ALLOW"
+        },
+        "conformance": {
+          "conformance_ref": "sha256:7ff807b0a0b2fd0a6c60fa60b3b721cee2870088455ea86ec5608eee08d2cc80",
+          "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000006",
+          "provider_did": "did:web:supership.crestsystems.ai",
+          "recommendation": "deny",
+          "score": 18,
+          "score_null_reason": null,
+          "spec": "urn:crest:trust-check-v1"
+        },
+        "joint_ref": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "joint_version": "joint-harness-v0",
+        "payment": {
+          "payment_ref": "sha256:6666666600000000000000000000000000000000000000000000000000000006",
+          "chain": "eip155:8453",
+          "asset_id": "USDC.6",
+          "amount_minor": "200000",
+          "payer_ref": "sha256:6060110000000000000000000000000000000000000000000000000000000606",
+          "payee_ref": "sha256:6060220000000000000000000000000000000000000000000000000000000606",
+          "timestamp_ms": 1716499000000
+        }
+      },
+      "expected_jcs_bytes_b64": "eyJjYW5vbl92ZXJzaW9uIjoiamNzLXJmYzg3ODUtdjEiLCJjb21wbGlhbmNlIjp7ImNvbXBsaWFuY2VfcmVmIjoic2hhMjU2OjE3ZWI2Mjk1NWYyNjBlOTQzMGY3MjA3YTJmYzA0MDA1MDJmMmZmMjg0ZDE5NjZkM2M3M2MwYWE3NjFhZmM3YTgiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6YWFhYTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNiIsImp1cmlzZGljdGlvbl9mbGFncyI6WyJVSyIsIkVVIl0sInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6YXBpLmFsZ292b2kuY28udWsiLCJ2ZXJkaWN0IjoiQUxMT1cifSwiY29uZm9ybWFuY2UiOnsiY29uZm9ybWFuY2VfcmVmIjoic2hhMjU2OjdmZjgwN2IwYTBiMmZkMGE2YzYwZmE2MGIzYjcyMWNlZTI4NzAwODg0NTVlYTg2ZWM1NjA4ZWVlMDhkMmNjODAiLCJldmlkZW5jZV9hbmNob3IiOiJzaGEyNTY6ZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNiIsInByb3ZpZGVyX2RpZCI6ImRpZDp3ZWI6c3VwZXJzaGlwLmNyZXN0c3lzdGVtcy5haSIsInJlY29tbWVuZGF0aW9uIjoiZGVueSIsInNjb3JlIjoxOCwic2NvcmVfbnVsbF9yZWFzb24iOm51bGwsInNwZWMiOiJ1cm46Y3Jlc3Q6dHJ1c3QtY2hlY2stdjEifSwiam9pbnRfcmVmIjoic2hhMjU2OjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJqb2ludF92ZXJzaW9uIjoiam9pbnQtaGFybmVzcy12MCIsInBheW1lbnQiOnsiYW1vdW50X21pbm9yIjoiMjAwMDAwIiwiYXNzZXRfaWQiOiJVU0RDLjYiLCJjaGFpbiI6ImVpcDE1NTo4NDUzIiwicGF5ZWVfcmVmIjoic2hhMjU2OjYwNjAyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2MDYiLCJwYXllcl9yZWYiOiJzaGEyNTY6NjA2MDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwNiIsInBheW1lbnRfcmVmIjoic2hhMjU2OjY2NjY2NjY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYiLCJ0aW1lc3RhbXBfbXMiOjE3MTY0OTkwMDAwMDB9fQ==",
+      "expected_content_hash": "db77d2dbbeec8d6c388366767e8db9b3e848ef087cf98bb228e88c1120b63e92"
+    }
+  ]
+}

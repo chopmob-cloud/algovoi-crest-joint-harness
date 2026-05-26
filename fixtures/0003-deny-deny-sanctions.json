@@ -1,0 +1,81 @@
+{
+  "id": "0003-deny-deny-sanctions",
+  "description": "Crest deny + AlgoVoi DENY. Hard halt; counterparty sanctions hit + Crest behavioural deny.",
+  "inputs": {
+    "payment": {
+      "payment_ref": "sha256:bad5d0b76c9b9281fdeb2509ad38ab132b16a17385ca01d976ff9e6e125bad00",
+      "chain": "eip155:8453",
+      "asset_id": "USDC.6",
+      "amount_minor": "50000000",
+      "payer_ref": "sha256:aaaa110000000000000000000000000000000000000000000000000000000000",
+      "payee_ref": "sha256:bbbb220000000000000000000000000000000000000000000000000000000000",
+      "timestamp_ms": 1716495000000
+    },
+    "compliance_emitter_input": {
+      "payer_ref": "sha256:aaaa110000000000000000000000000000000000000000000000000000000000",
+      "screen_result": "DENY",
+      "screen_timestamp_ms": 1716495000000,
+      "screen_provider_did": "did:web:api.algovoi.co.uk",
+      "jurisdiction_flags": [
+        "UK"
+      ],
+      "evidence_anchor": "sha256:5555555555555555555555555555555555555555555555555555555555555555"
+    },
+    "conformance_emitter_input": {
+      "payment_ref": "sha256:bad5d0b76c9b9281fdeb2509ad38ab132b16a17385ca01d976ff9e6e125bad00",
+      "subject": "sha256:bbbb220000000000000000000000000000000000000000000000000000000000",
+      "recommendation": "deny",
+      "score": 12,
+      "score_null_reason": null,
+      "evidence_array": [
+        {
+          "kind": "payment_history",
+          "source": "supership",
+          "ref": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+          "observed_at": 1716480000000,
+          "weight": 0.9
+        }
+      ],
+      "issued_at_ms": 1716495100000,
+      "verifier_did": "did:web:supership.crestsystems.ai",
+      "evidence_anchor": "sha256:7777777777777777777777777777777777777777777777777777777777777777"
+    }
+  },
+  "expected": {
+    "compliance_ref": "sha256:1e6eb361f7365b73056304900f8efc678717a0e25f40a5db452408b70ea98db9",
+    "conformance_ref": "sha256:47ae17c2eb6acfb8d617482df7414f58fb93a0ca68e07ddaa8c6594dc3d4353c",
+    "joint_ref": "sha256:81ea312260253d870d203b70cd00ca338db630ecd5185c010298f98c2f6852b4",
+    "joint_receipt": {
+      "canon_version": "jcs-rfc8785-v1",
+      "compliance": {
+        "compliance_ref": "sha256:1e6eb361f7365b73056304900f8efc678717a0e25f40a5db452408b70ea98db9",
+        "evidence_anchor": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+        "jurisdiction_flags": [
+          "UK"
+        ],
+        "provider_did": "did:web:api.algovoi.co.uk",
+        "verdict": "DENY"
+      },
+      "conformance": {
+        "conformance_ref": "sha256:47ae17c2eb6acfb8d617482df7414f58fb93a0ca68e07ddaa8c6594dc3d4353c",
+        "evidence_anchor": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "provider_did": "did:web:supership.crestsystems.ai",
+        "recommendation": "deny",
+        "score": 12,
+        "score_null_reason": null,
+        "spec": "urn:crest:trust-check-v1"
+      },
+      "joint_ref": "sha256:81ea312260253d870d203b70cd00ca338db630ecd5185c010298f98c2f6852b4",
+      "joint_version": "joint-harness-v0",
+      "payment": {
+        "payment_ref": "sha256:bad5d0b76c9b9281fdeb2509ad38ab132b16a17385ca01d976ff9e6e125bad00",
+        "chain": "eip155:8453",
+        "asset_id": "USDC.6",
+        "amount_minor": "50000000",
+        "payer_ref": "sha256:aaaa110000000000000000000000000000000000000000000000000000000000",
+        "payee_ref": "sha256:bbbb220000000000000000000000000000000000000000000000000000000000",
+        "timestamp_ms": 1716495000000
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "0004-no_data-allow-newpayee",
+  "description": "Crest no_data (unknown_service) + AlgoVoi ALLOW. New payee with no Crest history; AlgoVoi compliance still passes.",
+  "inputs": {
+    "payment": {
+      "payment_ref": "sha256:4444444400000000000000000000000000000000000000000000000000000004",
+      "chain": "eip155:8453",
+      "asset_id": "USDC.6",
+      "amount_minor": "100000",
+      "payer_ref": "sha256:404011000000000000000000000000000000000000000000000000000000404",
+      "payee_ref": "sha256:404022000000000000000000000000000000000000000000000000000000404",
+      "timestamp_ms": 1716497000000
+    },
+    "compliance_emitter_input": {
+      "payer_ref": "sha256:404011000000000000000000000000000000000000000000000000000000404",
+      "screen_result": "ALLOW",
+      "screen_timestamp_ms": 1716497000000,
+      "screen_provider_did": "did:web:api.algovoi.co.uk",
+      "jurisdiction_flags": [
+        "UK"
+      ],
+      "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000004"
+    },
+    "conformance_emitter_input": {
+      "payment_ref": "sha256:4444444400000000000000000000000000000000000000000000000000000004",
+      "subject": "sha256:404022000000000000000000000000000000000000000000000000000000404",
+      "recommendation": "no_data",
+      "score": null,
+      "score_null_reason": "unknown_service",
+      "evidence_array": [],
+      "issued_at_ms": 1716497100000,
+      "verifier_did": "did:web:supership.crestsystems.ai",
+      "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000004"
+    }
+  },
+  "expected": {
+    "compliance_ref": "sha256:df41307b3b607deb2a8b9064f34521662db8eaa2821bf6680a2d7d271764b37c",
+    "conformance_ref": "sha256:1ebfeefeb857ef21cd3005b427ee0f7379d584b7d5dd1ff3ac1e8692ea5dc41f",
+    "joint_ref": "sha256:a7f4f547bb6ecb917aaaa7ad74ac4d0422c7a857fca17f4c83d280f11a0f45df",
+    "joint_receipt": {
+      "canon_version": "jcs-rfc8785-v1",
+      "compliance": {
+        "compliance_ref": "sha256:df41307b3b607deb2a8b9064f34521662db8eaa2821bf6680a2d7d271764b37c",
+        "evidence_anchor": "sha256:aaaa000000000000000000000000000000000000000000000000000000000004",
+        "jurisdiction_flags": [
+          "UK"
+        ],
+        "provider_did": "did:web:api.algovoi.co.uk",
+        "verdict": "ALLOW"
+      },
+      "conformance": {
+        "conformance_ref": "sha256:1ebfeefeb857ef21cd3005b427ee0f7379d584b7d5dd1ff3ac1e8692ea5dc41f",
+        "evidence_anchor": "sha256:dddd000000000000000000000000000000000000000000000000000000000004",
+        "provider_did": "did:web:supership.crestsystems.ai",
+        "recommendation": "no_data",
+        "score": null,
+        "score_null_reason": "unknown_service",
+        "spec": "urn:crest:trust-check-v1"
+      },
+      "joint_ref": "sha256:a7f4f547bb6ecb917aaaa7ad74ac4d0422c7a857fca17f4c83d280f11a0f45df",
+      "joint_version": "joint-harness-v0",
+      "payment": {
+        "payment_ref": "sha256:4444444400000000000000000000000000000000000000000000000000000004",
+        "chain": "eip155:8453",
+        "asset_id": "USDC.6",
+        "amount_minor": "100000",
+        "payer_ref": "sha256:404011000000000000000000000000000000000000000000000000000000404",
+        "payee_ref": "sha256:404022000000000000000000000000000000000000000000000000000000404",
+        "timestamp_ms": 1716497000000
+      }
+    }
+  }
+}
