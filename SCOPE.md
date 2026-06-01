@@ -1,6 +1,6 @@
 # joint-harness-v0 — Scope
 
-**Status:** draft, AlgoVoi-side. Pre-share with Crest for review.
+**Status:** AlgoVoi-authored reference harness. Published.
 
 ## Purpose
 
@@ -30,9 +30,9 @@ The joint receipt is itself JCS-canonicalised, content-addressed by `joint_ref =
 
 ## Authorship and licence
 
-- AlgoVoi authors the joint-receipt schema and the compliance half of fixtures.
-- Crest authors the conformance half of fixtures and the verifier-side runner pass.
-- Apache 2.0, dual-owned. Repo home TBD (candidates: a new `algovoi-crest-joint-harness`, or a subtree in either of the existing conformance-vector repos).
+- AlgoVoi authors all code in this repository: the joint-receipt schema, the fixtures, the runners, and the cross-validation harness.
+- Crest (Crest Deployment Systems LLC) contributed a service-trust conformance vector as input data. Crest held write access and made zero commits.
+- Apache 2.0, AlgoVoi-authored. Crest's contribution is bounded to the conformance vector input.
 
 ## Cross-references
 
