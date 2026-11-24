@@ -65,7 +65,6 @@ Logged in `FIXTURE_FORMAT.md` § "Open questions for Crest review":
 - AlgoVoi compliance receipt: IETF I-D [draft-hopley-x402-compliance-receipt](https://datatracker.ietf.org/doc/draft-hopley-x402-compliance-receipt/)
 - AlgoVoi composite trust query: IETF I-D [draft-hopley-x402-composite-trust-query](https://datatracker.ietf.org/doc/draft-hopley-x402-composite-trust-query/)
 - Crest trust-check spec: `urn:crest:trust-check-v1` discovery at [supership.crestsystems.ai/.well-known/risk-check.json](https://supership.crestsystems.ai/.well-known/risk-check.json)
-- Crest action-ref-verify repo: [andysalvo/action-ref-verify](https://github.com/andysalvo/action-ref-verify)
 - Originating scoping ask: [chopmob-cloud/algovoi-jcs-conformance-vectors PR #1](https://github.com/chopmob-cloud/algovoi-jcs-conformance-vectors/pull/1#issuecomment-4548707008)
 
 ## Licence
